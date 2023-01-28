@@ -5,7 +5,7 @@
 
 
 <a href="">
-   <img width="400px" src=".github/demo.gif"/>
+   <img width="400px" src=".github/demo2.gif"/>
 </a>
 
 
