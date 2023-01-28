@@ -76,7 +76,7 @@ const Chat: React.FC<Chat> = ({ store, auth }) => {
                             title={msg.text}
                             description={auth.currentUser?.uid === msg.uid ? 'sent' : 'received'}
                         />
-                        <Tag >{moment.unix(msg?.createdAt?.seconds).format('hh:mm')}</Tag>
+                        {msg?.createdAt?.seconds && <Tag>{moment.unix(msg.createdAt.seconds).format('hh:mm')}</Tag> }
                     </List.Item>
                     )}
                 />
